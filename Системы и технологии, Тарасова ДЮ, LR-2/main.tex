@@ -1,0 +1,108 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% ===== НАСТРОЙКИ ШРИФТОВ И ЯЗЫКА =====
+\usepackage{fontspec}
+\defaultfontfeatures{Renderer=Basic, Ligatures=TeX}
+\newfontfamily\cyrillicfonttt{CMU Typewriter Text}
+\newfontfamily\cyrillicfont{CMU Sans Serif}
+\setmainfont{CMU Sans Serif}
+\setsansfont{CMU Sans Serif}
+\setmonofont{CMU Typewriter Text}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\setotherlanguages{english}
+
+% ===== СТИЛЬ MODERNCV =====
+\moderncvstyle{fancy} % casual, classic, banking, oldstyle, fancy
+\moderncvcolor{purple} % blue, orange, green, red, purple, grey, black
+
+% ===== НАСТРОЙКИ ПОЛЕЙ =====
+\usepackage[scale=0.75]{geometry}
+
+% ===== ПЕРСОНАЛЬНАЯ ИНФОРМАЦИЯ =====
+\name{Даша}{Тарасова}
+\title{Разработчик программного обеспечения}
+\address{г. Москва, Россия}{}{}
+\phone[mobile]{+7~(999)~123~45~67}
+\email{dasha.tarasova@email.com}
+\homepage{www.tarasova.com}
+\social[linkedin]{dasha-tarasova}
+\social[github]{tarasova}
+\photo[64pt][0.4pt]{imagge.jpg} 
+\quote{Ответственный и целеустремленный разработчик с опытом работы...}
+
+\begin{document}
+
+\makecvtitle
+
+% ===== ОПЫТ РАБОТЫ =====
+\section{Опыт работы}
+\cventry{2022--наст. время}{Разработчик ПО}{ООО "ТехноСофт"}{Москва}{}{
+\begin{itemize}
+\item Разработка веб-приложений на Java и Spring Framework
+\item Оптимизация производительности приложений
+\item Участие в код-ревью и менторинг junior-разработчиков
+\end{itemize}}
+
+\cventry{2020--2022}{Junior разработчик}{ООО "ИТ-Решения"}{Москва}{}{
+\begin{itemize}
+\item Разработка компонентов пользовательского интерфейса
+\item Тестирование и отладка приложений
+\item Участие в планировании спринтов
+\end{itemize}}
+
+% ===== ОБРАЗОВАНИЕ =====
+\section{Образование}
+\cventry{2016--2020}{Бакалавр}{Московский технический университет}{Москва}{}{
+\begin{itemize}
+\item Направление: Информатика и вычислительная техника
+\item Средний балл: 4.8
+\item Тема диплома: "Разработка системы управления проектами"
+\end{itemize}}
+
+\cventry{2020--2022}{Магистр}{Московский технический университет}{Москва}{}{
+\begin{itemize}
+\item Направление: Программная инженерия
+\item Средний балл: 5.0
+\end{itemize}}
+
+% ===== НАВЫКИ =====
+\section{Навыки}
+\subsection{Программирование}
+\cvitem{Продвинутый}{Java, Spring Framework, SQL, Git}
+\cvitem{Средний}{Python, JavaScript, HTML/CSS}
+\cvitem{Базовый}{Docker, Kubernetes, React}
+
+\subsection{Языки}
+\cvitem{Русский}{Родной}
+\cvitem{Английский}{B2 (Upper Intermediate)}
+\cvitem{Немецкий}{A2 (Basic)}
+
+% ===== ПРОЕКТЫ =====
+\section{Проекты}
+\cventry{2023}{Система управления задачами}{Личный проект}{}{}{
+\begin{itemize}
+\item Разработка full-stack приложения для управления проектами
+\item Использованы: Java, Spring Boot, React, PostgreSQL
+\item Реализована JWT аутентификация и REST API
+\end{itemize}}
+
+\cventry{2022}{Мобильное приложение для фитнеса}{Учебный проект}{}{}{
+\begin{itemize}
+\item Разработка кроссплатформенного приложения на Flutter
+\item Интеграция с Google Fit и Apple HealthKit
+\end{itemize}}
+
+% ===== СЕРТИФИКАТЫ =====
+\section{Сертификаты}
+\cvitem{2023}{Oracle Certified Professional, Java SE 11 Developer}
+\cvitem{2022}{AWS Certified Cloud Practitioner}
+\cvitem{2021}{Scrum Master Certified (SMC)}
+
+% ===== ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ =====
+\section{Дополнительно}
+\cvitem{Хобби}{Программирование, чтение технической литературы, путешествия}
+\cvitem{Волонтерство}{Помощь в организации IT-конференций, менторинг студентов}
+
+\end{document}
