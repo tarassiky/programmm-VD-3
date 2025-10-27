@@ -1,6 +1,7 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{casual}
+\moderncvcolor{blue}
 
-% ===== НАСТРОЙКИ ШРИФТОВ И ЯЗЫКА =====
 \usepackage{fontspec}
 \defaultfontfeatures{Renderer=Basic, Ligatures=TeX}
 \newfontfamily\cyrillicfonttt{CMU Typewriter Text}
@@ -13,96 +14,63 @@
 \setdefaultlanguage{russian}
 \setotherlanguages{english}
 
-% ===== СТИЛЬ MODERNCV =====
-\moderncvstyle{fancy} % casual, classic, banking, oldstyle, fancy
-\moderncvcolor{purple} % blue, orange, green, red, purple, grey, black
-
-% ===== НАСТРОЙКИ ПОЛЕЙ =====
 \usepackage[scale=0.75]{geometry}
 
-% ===== ПЕРСОНАЛЬНАЯ ИНФОРМАЦИЯ =====
-\name{Даша}{Тарасова}
-\title{Разработчик программного обеспечения}
-\address{г. Москва, Россия}{}{}
-\phone[mobile]{+7~(999)~123~45~67}
-\email{dasha.tarasova@email.com}
-\homepage{www.tarasova.com}
-\social[linkedin]{dasha-tarasova}
-\social[github]{tarasova}
-\photo[64pt][0.4pt]{imagge.jpg} 
-\quote{Ответственный и целеустремленный разработчик с опытом работы...}
+\name{Дарья}{Юрьевна Тарасова}
+\title{Студентка 3-го курса по направлению "Информатика и вычислительная техника"}
+\address{Санкт-Петербург, Россия}
+\phone[mobile]{+7 (921) 444-44-44}
+\email{darya.tarasova@example.com}
+\social[github]{darya-tarasova}
+\social[linkedin]{darya-tarasova}
 
 \begin{document}
 
 \makecvtitle
 
-% ===== ОПЫТ РАБОТЫ =====
-\section{Опыт работы}
-\cventry{2022--наст. время}{Разработчик ПО}{ООО "ТехноСофт"}{Москва}{}{
-\begin{itemize}
-\item Разработка веб-приложений на Java и Spring Framework
-\item Оптимизация производительности приложений
-\item Участие в код-ревью и менторинг junior-разработчиков
-\end{itemize}}
+\section{О себе}
+\cvitem{}{Студентка 3-го курса РГПУ им. А. И. Герцена, Института информационных технологий и технологического образования. Обучаюсь по направлению "Информатика и вычислительная техника" профиль "Технологии разработки программного обеспечения и обработки больших данных". Ищу возможности для стажировки и применения полученных знаний на практике. Обладаю высоким уровнем гибких навыков (Soft Skills), таких как коммуникабельность, общительность, способность к работе в команде, умение быстро обучаться и обучать других.}
 
-\cventry{2020--2022}{Junior разработчик}{ООО "ИТ-Решения"}{Москва}{}{
-\begin{itemize}
-\item Разработка компонентов пользовательского интерфейса
-\item Тестирование и отладка приложений
-\item Участие в планировании спринтов
-\end{itemize}}
-
-% ===== ОБРАЗОВАНИЕ =====
 \section{Образование}
-\cventry{2016--2020}{Бакалавр}{Московский технический университет}{Москва}{}{
+\cventry{2025-настоящее время}{Бакалавриат}{РГПУ им. А. И. Герцена, Институт информационных технологий и технологического образования}{Санкт-Петербург}{}{
 \begin{itemize}
-\item Направление: Информатика и вычислительная техника
-\item Средний балл: 4.8
-\item Тема диплома: "Разработка системы управления проектами"
+\item Направление: "Информатика и вычислительная техника"
+\item Профиль: "Технологии разработки программного обеспечения и обработки больших данных"
+\item 3 курс
 \end{itemize}}
 
-\cventry{2020--2022}{Магистр}{Московский технический университет}{Москва}{}{
+\section{Навыки и технологии}
+\subsection{Технические навыки}
+\cvitem{Языки программирования}{Python, JavaScript}
+\cvitem{Базы данных}{MySQL}
+\cvitem{Инструменты}{Git, Docker, VS Code}
+
+\subsection{Гибкие навыки (Soft Skills)}
+\cvitem{}{Коммуникабельность, общительность, работа в команде, быстрая обучаемость, умение обучать других}
+
+\section{Проекты и достижения}
+\cvitem{Учебные проекты}{
 \begin{itemize}
-\item Направление: Программная инженерия
-\item Средний балл: 5.0
+\item Разработка учебных проектов в рамках курса по программированию на Python и JavaScript
+\item Изучение и применение технологий для работы с базами данных (MySQL) и контейнеризации (Docker)
 \end{itemize}}
 
-% ===== НАВЫКИ =====
-\section{Навыки}
-\subsection{Программирование}
-\cvitem{Продвинутый}{Java, Spring Framework, SQL, Git}
-\cvitem{Средний}{Python, JavaScript, HTML/CSS}
-\cvitem{Базовый}{Docker, Kubernetes, React}
+\section{Опыт работы}
+\cvitem{}{Опыта коммерческой работы пока нет. Готова применять и развивать свои знания и навыки в реальных проектах.}
 
-\subsection{Языки}
+\section{Дополнительная информация}
+\cvitem{Награды и благодарности}{
+\begin{itemize}
+\item Грамоты и благодарственные письма от РГПУ им. А. И. Герцена
+\item Благодарности от Комитета по молодежной политике и взаимодействию с общественными организациями Санкт-Петербурга
+\item Благодарности от Законодательного собрания Санкт-Петербурга
+\end{itemize}}
+
+\section{Языки}
 \cvitem{Русский}{Родной}
-\cvitem{Английский}{B2 (Upper Intermediate)}
-\cvitem{Немецкий}{A2 (Basic)}
+\cvitem{Английский}{Базовый уровень (A2)}
 
-% ===== ПРОЕКТЫ =====
-\section{Проекты}
-\cventry{2023}{Система управления задачами}{Личный проект}{}{}{
-\begin{itemize}
-\item Разработка full-stack приложения для управления проектами
-\item Использованы: Java, Spring Boot, React, PostgreSQL
-\item Реализована JWT аутентификация и REST API
-\end{itemize}}
-
-\cventry{2022}{Мобильное приложение для фитнеса}{Учебный проект}{}{}{
-\begin{itemize}
-\item Разработка кроссплатформенного приложения на Flutter
-\item Интеграция с Google Fit и Apple HealthKit
-\end{itemize}}
-
-% ===== СЕРТИФИКАТЫ =====
-\section{Сертификаты}
-\cvitem{2023}{Oracle Certified Professional, Java SE 11 Developer}
-\cvitem{2022}{AWS Certified Cloud Practitioner}
-\cvitem{2021}{Scrum Master Certified (SMC)}
-
-% ===== ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ =====
-\section{Дополнительно}
-\cvitem{Хобби}{Программирование, чтение технической литературы, путешествия}
-\cvitem{Волонтерство}{Помощь в организации IT-конференций, менторинг студентов}
+\vfill
+\centering{\footnotesize Обновлено: 27 октября 2025 г.}
 
 \end{document}
