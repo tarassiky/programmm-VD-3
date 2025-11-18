@@ -1,0 +1,135 @@
+\documentclass[a0paper,portrait]{tikzposter}
+
+% ---------- Поддержка кириллицы ----------
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{russian}
+\setotherlanguage{english}
+\setmainfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+
+% ---------- Пакеты ----------
+\usepackage{amsmath,amssymb,graphicx,tikz}
+
+% ---------- Цветовая палитра (яркая, но не кричащая) ----------
+\definecolor{mycyan1}{RGB}{180,240,240}   % светлая бирюза
+\definecolor{mycyan2}{RGB}{110,200,210}   % насыщенная бирюза
+\definecolor{myviolet}{RGB}{150,120,220}  % фиолетовый
+\definecolor{mybg}{RGB}{235,250,250}      % нежный бирюзовый фон
+
+% ---------- Оформление темы ----------
+\usetheme{Simple}
+\useblockstyle[
+  roundedcorners=25,
+  linewidth=2pt,
+  titleinnersep=8pt,
+  bodyinnersep=10pt
+]{Default}
+
+\definecolorstyle{brightstyle}{
+  \definecolor{backgroundcolor}{named}{mybg}
+  \definecolor{blocktitlebgcolor}{named}{mycyan2}
+  \definecolor{blocktitlefgcolor}{named}{white}
+  \definecolor{blockbodybgcolor}{named}{white}
+  \definecolor{blockbodyfgcolor}{named}{black}
+  \definecolor{titlefgcolor}{named}{black}
+  \definecolor{framecolor}{named}{mybg}
+  \definecolor{titlebgcolor}{named}{mybg}
+}{}
+\usecolorstyle{brightstyle}
+
+% ---------- Заголовок ----------
+\title{Визуализация данных в Python с использованием библиотеки Matplotlib}
+\author{Тарасова Дарья Юрьевна}
+\institute{РГПУ им. А. И. Герцена}
+
+\titlegraphic{
+\vspace{-2cm}
+\centering
+\includegraphics[width=10cm]{logo.png}\\[1cm]
+}
+
+\begin{document}
+\maketitle
+
+% ---------- Аннотация ----------
+\block{Аннотация}{
+Работа посвящена изучению инструментов визуализации данных в языке программирования Python
+с использованием библиотеки \textbf{Matplotlib}.
+Рассмотрены основные типы графиков, настройки отображения и приёмы повышения информативности диаграмм.
+Созданы примеры визуализаций с применением цветовых схем и пользовательских параметров.
+}
+
+% ---------- Введение ----------
+\block{Введение}{
+Визуализация данных является важной частью анализа информации.
+Python предоставляет широкий набор инструментов для построения графиков,
+среди которых одной из наиболее популярных библиотек является \textbf{Matplotlib}.
+Она позволяет создавать линейные графики, гистограммы, круговые диаграммы,
+а также настраивать цвета, подписи и стиль отображения.
+В данной работе рассматриваются базовые возможности библиотеки.
+}
+
+% ---------- Методы ----------
+\block{Методы}{
+Для построения визуализаций использовалась библиотека \textbf{Matplotlib}:
+
+\begin{itemize}
+\item построение линейных графиков: \verb|plt.plot()|;
+\item построение гистограмм: \verb|plt.hist()|;
+\item круговые диаграммы: \verb|plt.pie()|;
+\item настройка цвета, толщины линий, подписей и сетки;
+\item сохранение изображений в форматах PNG и SVG.
+\end{itemize}
+
+\vspace{8pt}
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+  % Основа графика
+  \draw[thick, ->] (0,0) -- (6,0);
+  \draw[thick, ->] (0,0) -- (0,4);
+
+  % Линия графика
+  \draw[very thick, myviolet] (0,1) -- (1,2.2) -- (2,1.7) -- (3,3.2) -- (4,2.8) -- (5,3.6);
+
+  \node at (3,-0.7) {\small Пример линейного графика};
+\end{tikzpicture}
+\end{center}
+}
+
+% ---------- Результаты ----------
+\block{Результаты}{
+В процессе работы были созданы примеры основных типов визуализаций:
+
+\begin{itemize}
+\item линейный график изменения параметра во времени;
+\item гистограмма распределения случайных данных;
+\item круговая диаграмма для демонстрации долей категорий;
+\item сравнение стилей оформления и цветовых схем.
+\end{itemize}
+
+Были изучены особенности применения сетки, легенд и адаптивного масштаба,
+а также параметры сохранения изображений (\verb|dpi|, формат, прозрачность).
+}
+
+% ---------- Выводы ----------
+\block{Выводы}{
+\begin{itemize}
+\item изучены базовые возможности Matplotlib для визуализации данных;
+\item рассмотрены типы графиков и особенности их применения;
+\item созданы примеры графиков с пользовательскими настройками;
+\item показано, что Matplotlib позволяет формировать информативные визуализации
+для анализа данных и презентаций.
+\end{itemize}
+}
+
+% ---------- Список литературы ----------
+\block{Список литературы}{
+1. Hunter J. D. \emph{Matplotlib: A 2D Graphics Environment}, 2007.\\
+2. VanderPlas J. \emph{Python Data Science Handbook}. O'Reilly, 2016.\\
+3. Официальная документация Matplotlib — \texttt{https://matplotlib.org}.\\
+4. Макаров А. \emph{Python для анализа данных}. — М.: Питер, 2023.
+}
+
+\end{document}
